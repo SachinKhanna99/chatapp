@@ -10,6 +10,7 @@ class AuthService {
   User _userFromFirebaseUser(FirebaseUser user) {
     return user != null ? User(uid: user.uid) : null;
   }
+//new changes
 
   Future signInWithEmailAndPassword(String email, String password) async {
     try {
